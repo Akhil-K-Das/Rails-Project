@@ -1,0 +1,2 @@
+class Thrtoekm < ApplicationRecord
+end

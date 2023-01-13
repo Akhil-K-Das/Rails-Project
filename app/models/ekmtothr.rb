@@ -1,0 +1,2 @@
+class Ekmtothr < ApplicationRecord
+end

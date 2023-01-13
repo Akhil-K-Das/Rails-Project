@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bustype: MyString
+  bus: MyString
+  departure: 2023-01-10 15:32:06
+  duration: 2023-01-10 15:32:06
+  arrival: 2023-01-10 15:32:06
+  fare: 1
+  seats_available: 1
+  from: MyString
+  to: MyString
+
+two:
+  bustype: MyString
+  bus: MyString
+  departure: 2023-01-10 15:32:06
+  duration: 2023-01-10 15:32:06
+  arrival: 2023-01-10 15:32:06
+  fare: 1
+  seats_available: 1
+  from: MyString
+  to: MyString

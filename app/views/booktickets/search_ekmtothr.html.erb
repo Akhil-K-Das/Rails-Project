@@ -1,0 +1,68 @@
+ 
+ <table class="table table-striped table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>BusType</th>&emsp;
+      <th>Bus</th>&emsp;
+      <th>From</th>&emsp;
+      <th>Departure Time</th>&emsp;
+      <th>Duration</th>&emsp;
+      <th>To</th>&emsp;
+      <th>Arrival Time</th>&emsp;
+      <th>Fare</th>&emsp;
+      <th>Seats Availability</th>&emsp;
+
+     
+      
+      <!-- <th colspan="2"></th> -->
+    </tr>
+  </thead>
+<tbody>
+    <% @ekmtothr.all.each do |bookticket| %>
+        <tr>
+          <td>
+            <%= bookticket.bustype %>
+          </td>
+
+          <td>
+            <%= bookticket.bus %>
+          </td>
+
+          <td>
+            <%= bookticket.from %>
+          </td>
+
+          <td>
+            <%= bookticket.departure %>
+          </td>
+
+          <td>
+            <%= bookticket.duration %>
+          </td>
+
+          <td>
+            <%= bookticket.to %>
+          </td>
+
+          <td>
+            <%= bookticket.arrival %>
+          </td>
+
+          <td>
+            <%= bookticket.fare %>
+          </td>
+
+          <td>
+            <%= bookticket.seats_available %>
+          </td>
+
+          
+                
+        </tr>   
+  
+<% end %>
+
+</div>
+</tbody>
+
+</body>

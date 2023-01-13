@@ -1,0 +1,43 @@
+<table class="table table-striped table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Bus Route</th>&emsp;
+      <th>First Bus</th>&emsp;
+      <th>Last Bus</th>&emsp;
+      
+      <!-- <th colspan="2"></th> -->
+    </tr>
+  </thead>
+<tbody>
+
+    <% @search.all.each do |busroute| %>
+        <tr>
+          <td>
+          	<% if busroute.route == "Thrissur to Ernakulam" %>
+            	<%= link_to busroute.route, booktickets_thrtoekm_path %>
+            <% elsif busroute.route == "Ernakulam to Thiruvananthapuram" %>
+            	<%= link_to busroute.route, booktickets_ekmtotvm_path %>
+            <% elsif busroute.route == "Ernakulam to Thrissur" %>
+            	<%= link_to busroute.route, booktickets_ekmtothr_path %>
+            <% else %>
+            	<%= busroute.route %>
+            <% end %>
+
+          </td>
+
+          <td>
+            <%= busroute.first_bus %>
+          </td>
+
+          <td>
+            <%= busroute.last_bus %>
+          </td>
+      
+        </tr>   
+  
+	<% end %>
+
+
+
+</tbody>
+</table>

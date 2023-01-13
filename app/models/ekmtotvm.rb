@@ -1,0 +1,2 @@
+class Ekmtotvm < ApplicationRecord
+end
